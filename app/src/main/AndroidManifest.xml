@@ -27,7 +27,6 @@
             android:label="Over Score" />
         <activity android:name=".UserActivity" />
         <activity android:name=".TeamsActivity" />
-        <activity android:name=".ShowActivity"></activity>
     </application>
 
 </manifest>
