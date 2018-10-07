@@ -1,4 +1,4 @@
-package com.example.android.cricket;
+package com.example.android.cricket.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,14 +9,17 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static com.example.android.cricket.MainActivity.balls;
-import static com.example.android.cricket.MainActivity.fours;
-import static com.example.android.cricket.MainActivity.overs;
-import static com.example.android.cricket.MainActivity.pBalls;
-import static com.example.android.cricket.MainActivity.runs;
-import static com.example.android.cricket.MainActivity.sixes;
-import static com.example.android.cricket.MainActivity.tsixes;
-import static com.example.android.cricket.MainActivity.wickets;
+import com.example.android.cricket.R;
+import com.example.android.cricket.database.myDbHandler;
+import com.example.android.cricket.model.Innings;
+
+import static com.example.android.cricket.ui.MainActivity.balls;
+import static com.example.android.cricket.ui.MainActivity.fours;
+import static com.example.android.cricket.ui.MainActivity.pBalls;
+import static com.example.android.cricket.ui.MainActivity.runs;
+import static com.example.android.cricket.ui.MainActivity.sixes;
+import static com.example.android.cricket.ui.MainActivity.tsixes;
+import static com.example.android.cricket.ui.MainActivity.wickets;
 
 public class UserActivity extends AppCompatActivity {
 

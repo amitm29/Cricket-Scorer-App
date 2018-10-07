@@ -1,15 +1,17 @@
-package com.example.android.cricket;
+package com.example.android.cricket.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import static com.example.android.cricket.MainActivity.ba;
-import static com.example.android.cricket.MainActivity.balls;
-import static com.example.android.cricket.MainActivity.bb;
-import static com.example.android.cricket.MainActivity.mBalls;
-import static com.example.android.cricket.MainActivity.overs;
+import com.example.android.cricket.R;
+
+import static com.example.android.cricket.ui.MainActivity.ba;
+import static com.example.android.cricket.ui.MainActivity.balls;
+import static com.example.android.cricket.ui.MainActivity.bb;
+import static com.example.android.cricket.ui.MainActivity.mBalls;
+import static com.example.android.cricket.ui.MainActivity.overs;
 
 public class OversActivity extends AppCompatActivity {
 
@@ -37,8 +39,8 @@ public class OversActivity extends AppCompatActivity {
         displayo(overs);
     }
     private void displayo(float number) {
-        TextView quantityTextView = (TextView) findViewById(R.id.overs_tv);
-        quantityTextView.setText("" + number);
+        TextView quantityTextView = findViewById(R.id.overs_tv);
+        quantityTextView.setText(String.valueOf(number));
     }
     public void over()
     {

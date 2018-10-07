@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.cricket.EndOverActivity">
+    tools:context="com.example.android.cricket.ui.EndOverActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

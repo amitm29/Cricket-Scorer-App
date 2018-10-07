@@ -1,4 +1,4 @@
-package com.example.android.cricket;
+package com.example.android.cricket.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,10 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 
-import static com.example.android.cricket.MainActivity.sbat;
-import static com.example.android.cricket.MainActivity.sbowl;
+import com.example.android.cricket.R;
+
+import static com.example.android.cricket.ui.MainActivity.sbat;
+import static com.example.android.cricket.ui.MainActivity.sbowl;
 
 public class TeamsActivity extends AppCompatActivity {
 
@@ -21,12 +22,12 @@ public class TeamsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teams);
 
-        bat = (RadioGroup) findViewById(R.id.batting);
-        bowl = (RadioGroup) findViewById(R.id.bowling);
-        ANbat = (RadioButton) findViewById(R.id.team2);
-        ARbat = (RadioButton) findViewById(R.id.team3);
-        ANbowl = (RadioButton) findViewById(R.id.team2b);
-        ARbowl = (RadioButton) findViewById(R.id.team3b);
+        bat = findViewById(R.id.batting);
+        bowl = findViewById(R.id.bowling);
+        ANbat = findViewById(R.id.team2);
+        ARbat = findViewById(R.id.team3);
+        ANbowl = findViewById(R.id.team2b);
+        ARbowl = findViewById(R.id.team3b);
     }
 
 

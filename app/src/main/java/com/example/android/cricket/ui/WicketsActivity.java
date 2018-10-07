@@ -1,15 +1,17 @@
-package com.example.android.cricket;
+package com.example.android.cricket.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import static com.example.android.cricket.MainActivity.mBalls;
-import static com.example.android.cricket.MainActivity.mRuns;
-import static com.example.android.cricket.MainActivity.tempBalls;
-import static com.example.android.cricket.MainActivity.tempRuns;
-import static com.example.android.cricket.MainActivity.wickets;
+import com.example.android.cricket.R;
+
+import static com.example.android.cricket.ui.MainActivity.mBalls;
+import static com.example.android.cricket.ui.MainActivity.mRuns;
+import static com.example.android.cricket.ui.MainActivity.tempBalls;
+import static com.example.android.cricket.ui.MainActivity.tempRuns;
+import static com.example.android.cricket.ui.MainActivity.wickets;
 
 public class WicketsActivity extends AppCompatActivity {
 
@@ -33,7 +35,7 @@ public class WicketsActivity extends AppCompatActivity {
         displayw(wickets);
     }
     private void displayw(int number) {
-        TextView quantityTextView = (TextView) findViewById(R.id.wickets_tv);
-        quantityTextView.setText("" + number);
+        TextView quantityTextView = findViewById(R.id.wickets_tv);
+        quantityTextView.setText(String.valueOf(number));
     }
 }

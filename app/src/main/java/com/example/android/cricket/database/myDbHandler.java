@@ -1,11 +1,12 @@
-package com.example.android.cricket;
+package com.example.android.cricket.database;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.example.android.cricket.model.Innings;
 
 
 /**
@@ -57,11 +58,11 @@ public class myDbHandler extends SQLiteOpenHelper {
     {
         SQLiteDatabase db= this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        int iRuns = innings.getrRuns();
-        int iWickets = innings.getrWickets();
-        float iBalls = innings.getrBallss();
-        int iFours = innings.getrFours();
-        int iSixes = innings.getrSixes();
+        int iRuns = innings.getRuns();
+        int iWickets = innings.getWickets();
+        float iBalls = innings.getBalls();
+        int iFours = innings.getFours();
+        int iSixes = innings.getSixes();
         values.put(COLUMN_RUNS, iRuns);
         values.put(COLUMN_WICKETS, iWickets);
         values.put(COLUMN_BALLS, iBalls);

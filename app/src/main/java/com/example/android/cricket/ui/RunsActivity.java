@@ -1,12 +1,14 @@
-package com.example.android.cricket;
+package com.example.android.cricket.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import static com.example.android.cricket.MainActivity.mRuns;
-import static com.example.android.cricket.MainActivity.runs;
+import com.example.android.cricket.R;
+
+import static com.example.android.cricket.ui.MainActivity.mRuns;
+import static com.example.android.cricket.ui.MainActivity.runs;
 
 public class RunsActivity extends AppCompatActivity {
 
@@ -30,8 +32,8 @@ public class RunsActivity extends AppCompatActivity {
         display(runs);
     }
     private void display(int number) {
-        TextView quantityTextView = (TextView) findViewById(R.id.runs_tv);
-        quantityTextView.setText("" + number);
+        TextView quantityTextView = findViewById(R.id.runs_tv);
+        quantityTextView.setText(String.valueOf(number));
     }
 
 }
