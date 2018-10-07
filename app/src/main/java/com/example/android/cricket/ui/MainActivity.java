@@ -1,10 +1,9 @@
-package com.example.android.cricket;
+package com.example.android.cricket.ui;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -19,6 +18,8 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.android.cricket.R;
 
 import java.util.ArrayList;
 import java.util.Random;

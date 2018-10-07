@@ -1,13 +1,15 @@
-package com.example.android.cricket;
+package com.example.android.cricket.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import static com.example.android.cricket.MainActivity.oType;
-import static com.example.android.cricket.MainActivity.pace;
-import static com.example.android.cricket.MainActivity.spin;
+import com.example.android.cricket.R;
+
+import static com.example.android.cricket.ui.MainActivity.oType;
+import static com.example.android.cricket.ui.MainActivity.pace;
+import static com.example.android.cricket.ui.MainActivity.spin;
 
 public class EndOverActivity extends AppCompatActivity {
 
@@ -51,13 +53,13 @@ public class EndOverActivity extends AppCompatActivity {
 
     private void displays(int s)
     {
-        TextView textView = (TextView) findViewById(R.id.spin_tv);
-        textView.setText("" + s);
+        TextView textView = findViewById(R.id.spin_tv);
+        textView.setText(String.valueOf(s));
     }
 
     private void displayp(int p)
     {
-        TextView textView = (TextView) findViewById(R.id.pace_tv);
-        textView.setText("" + p);
+        TextView textView = findViewById(R.id.pace_tv);
+        textView.setText(String.valueOf(p));
     }
 }

@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:layout_marginTop="190dp"
-    tools:context="com.example.android.cricket.OversActivity">
+    tools:context="com.example.android.cricket.ui.OversActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

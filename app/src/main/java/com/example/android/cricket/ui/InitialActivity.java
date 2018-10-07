@@ -1,4 +1,4 @@
-package com.example.android.cricket;
+package com.example.android.cricket.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,13 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import static com.example.android.cricket.MainActivity.balls;
-import static com.example.android.cricket.MainActivity.flag;
-import static com.example.android.cricket.MainActivity.oType;
-import static com.example.android.cricket.MainActivity.pace;
-import static com.example.android.cricket.MainActivity.projected;
-import static com.example.android.cricket.MainActivity.runs;
-import static com.example.android.cricket.MainActivity.spin;
+import com.example.android.cricket.R;
+
+import static com.example.android.cricket.ui.MainActivity.oType;
+import static com.example.android.cricket.ui.MainActivity.pace;
+import static com.example.android.cricket.ui.MainActivity.projected;
+import static com.example.android.cricket.ui.MainActivity.spin;
 
 public class InitialActivity extends AppCompatActivity {
     static boolean temp = false;
@@ -32,7 +31,7 @@ public class InitialActivity extends AppCompatActivity {
     private  void displayPro()
     {
         String scr;
-        TextView textView = (TextView) findViewById(R.id.textView5);
+        TextView textView = findViewById(R.id.textView5);
         scr = "Projected Score : " + projected;
         textView.setText(scr);
     }
